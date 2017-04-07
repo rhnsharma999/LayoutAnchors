@@ -14,6 +14,9 @@
 		DE6DA5CF1E979B400037C81A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE6DA5CD1E979B400037C81A /* LaunchScreen.storyboard */; };
 		DE6DA5DA1E979B400037C81A /* delteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6DA5D91E979B400037C81A /* delteTests.swift */; };
 		DE6DA5E51E979B400037C81A /* delteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6DA5E41E979B400037C81A /* delteUITests.swift */; };
+		DE6DA62D1E97A7520037C81A /* dgdg.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6DA62C1E97A7520037C81A /* dgdg.swift */; };
+		DE6DA62F1E97AAAC0037C81A /* customCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE6DA62E1E97AAAC0037C81A /* customCellTableViewCell.swift */; };
+		DED2B74E1E980917007B3A38 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DED2B74D1E980917007B3A38 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		DE6DA5E01E979B400037C81A /* delteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = delteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6DA5E41E979B400037C81A /* delteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = delteUITests.swift; sourceTree = "<group>"; };
 		DE6DA5E61E979B400037C81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE6DA62C1E97A7520037C81A /* dgdg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dgdg.swift; sourceTree = "<group>"; };
+		DE6DA62E1E97AAAC0037C81A /* customCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = customCellTableViewCell.swift; sourceTree = "<group>"; };
+		DED2B74D1E980917007B3A38 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6DA5C31E979B400037C81A /* delte */,
+				DED2B74F1E980E56007B3A38 /* toBeDeleted */,
 				DE6DA5D81E979B400037C81A /* delteTests */,
 				DE6DA5E31E979B400037C81A /* delteUITests */,
 				DE6DA5C21E979B400037C81A /* Products */,
@@ -98,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				DE6DA5C41E979B400037C81A /* AppDelegate.swift */,
-				DE6DA5C61E979B400037C81A /* ViewController.swift */,
+				DED2B74D1E980917007B3A38 /* SecondViewController.swift */,
 				DE6DA5C81E979B400037C81A /* Main.storyboard */,
 				DE6DA5CB1E979B400037C81A /* Assets.xcassets */,
 				DE6DA5CD1E979B400037C81A /* LaunchScreen.storyboard */,
@@ -123,6 +130,17 @@
 				DE6DA5E61E979B400037C81A /* Info.plist */,
 			);
 			path = delteUITests;
+			sourceTree = "<group>";
+		};
+		DED2B74F1E980E56007B3A38 /* toBeDeleted */ = {
+			isa = PBXGroup;
+			children = (
+				DE6DA5C61E979B400037C81A /* ViewController.swift */,
+				DE6DA62E1E97AAAC0037C81A /* customCellTableViewCell.swift */,
+				DE6DA62C1E97A7520037C81A /* dgdg.swift */,
+			);
+			name = toBeDeleted;
+			path = delte;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,7 +280,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE6DA62D1E97A7520037C81A /* dgdg.swift in Sources */,
 				DE6DA5C71E979B400037C81A /* ViewController.swift in Sources */,
+				DE6DA62F1E97AAAC0037C81A /* customCellTableViewCell.swift in Sources */,
+				DED2B74E1E980917007B3A38 /* SecondViewController.swift in Sources */,
 				DE6DA5C51E979B400037C81A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +533,7 @@
 				DE6DA5EB1E979B400037C81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE6DA5EC1E979B400037C81A /* Build configuration list for PBXNativeTarget "delteTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +542,7 @@
 				DE6DA5EE1E979B400037C81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE6DA5EF1E979B400037C81A /* Build configuration list for PBXNativeTarget "delteUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +551,7 @@
 				DE6DA5F11E979B400037C81A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
